@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {createMuiTheme, makeStyles} from "@material-ui/core";
 import { Typography, Grid, Paper } from "@material-ui/core";
+import HatchStore from '../stores/HatchStore';
+import { inject, observer } from "mobx-react";
 
 const theme = createMuiTheme({
     palette: {
@@ -30,51 +32,37 @@ const useStyles = makeStyles( theme => ({
     }
 }));
 
+@inject("HatchStore")
+@observer
 class Hatch extends Component {
+
+    componentDidMount() {
+        this.forceUpdate();
+    }
+
     render() {
         const classes = useStyles;
-
+        const {HatchStore} = this.props;
         return(
             <Grid container spacing={3} style={{ padding: 30}}>
+                {HatchStore.hatches.map((hatch, index) => {
+                    return (
+                        <Grid key={hatch.date} className={classes.hatch} item xs={3} alignContent="center">
+                            <Paper
+                                elevation={3}
+                                style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}
+                            >
+                                <Typography variant="h4" align="center">
+                                    {hatch.text}
+                                </Typography>
+                            </Paper>
+                        </Grid>
+                    );
+                })}
                 <Grid className={classes.hatch} item xs={3} alignContent="center">
                     <Paper elevation={3} style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}>
                         <Typography variant="h4" align="center">
                             1
-                        </Typography>
-                    </Paper>
-                </Grid>
-                <Grid className={classes.hatch} item xs={3}>
-                    <Paper elevation={3} style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}>
-                        <Typography variant="h4" align="center">
-                             2
-                        </Typography>
-                    </Paper>
-                </Grid>
-                <Grid className={classes.hatch} item xs={3}>
-                    <Paper elevation={3} style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}>
-                        <Typography variant="h4" align="center">
-                             3
-                        </Typography>
-                    </Paper>
-                </Grid>
-                <Grid className={classes.hatch} item xs={3}>
-                    <Paper elevation={3} style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}>
-                        <Typography variant="h4" align="center">
-                             4
-                        </Typography>
-                    </Paper>
-                </Grid>
-                <Grid className={classes.hatch} item xs={3}>
-                    <Paper elevation={3} style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}>
-                        <Typography variant="h4" align="center">
-                             5
-                        </Typography>
-                    </Paper>
-                </Grid>
-                <Grid className={classes.hatch} item xs={3}>
-                    <Paper elevation={3} style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}>
-                        <Typography variant="h4" align="center">
-                             6
                         </Typography>
                     </Paper>
                 </Grid>
