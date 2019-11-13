@@ -3,118 +3,146 @@
     "hatch1" : {
       "date": "2019-12-01",
       "text": "Luke 1",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch2" : {
       "date": "2019-12-02",
       "text": "Luke 2",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch3" : {
       "date": "2019-12-03",
       "text": "Luke 3",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch4" : {
       "date": "2019-12-04",
       "text": "Luke 4",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch5" : {
       "date": "2019-12-05",
       "text": "Luke 5",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch6" : {
       "date": "2019-12-06",
       "text": "Luke 6",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch7" : {
       "date": "2019-12-07",
       "text": "Luke 7",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch8" : {
       "date": "2019-12-08",
       "text": "Luke 8",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch9" : {
       "date": "2019-12-09",
       "text": "Luke 9",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch10" : {
       "date": "2019-12-10",
       "text": "Luke 10",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch11" : {
       "date": "2019-12-11",
       "text": "Luke 11",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch12" : {
       "date": "2019-12-12",
       "text": "Luke 12",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch13" : {
       "date": "2019-12-13",
       "text": "Luke 13",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch14" : {
       "date": "2019-12-14",
       "text": "Luke 14",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch15" : {
       "date": "2019-12-15",
       "text": "Luke 15",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch16" : {
       "date": "2019-12-16",
       "text": "Luke 16",
-      "image": null
-    },"hatch17" : {
+      "image": null,
+      "redeemed": false
+    },
+    "hatch17" : {
       "date": "2019-12-17",
       "text": "Luke 17",
-      "image": null
-    },"hatch18" : {
+      "image": null,
+      "redeemed": false
+    },
+    "hatch18" : {
       "date": "2019-12-18",
       "text": "Luke 18",
-      "image": null
-    },"hatch19" : {
+      "image": null,
+      "redeemed": false
+    },
+    "hatch19" : {
       "date": "2019-12-19",
       "text": "Luke 19",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch20" : {
       "date": "2019-12-20",
       "text": "Luke 20",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch21" : {
       "date": "2019-12-21",
       "text": "Luke 21",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch22" : {
       "date": "2019-12-22",
       "text": "Luke 22",
-      "image": null
+      "image": null,
+      "redeemed": false
     },
     "hatch23" : {
       "date": "2019-12-23",
       "text": "Luke 23",
-      "image": null
-    },"hatch24" : {
+      "image": null,
+      "redeemed": false
+    },
+    "hatch24" : {
       "date": "2019-12-24",
       "text": "Luke 24",
-      "image": null
+      "image": null,
+      "redeemed": false
     }
   }
 }

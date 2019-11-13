@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import HatchStore from './stores/HatchStore';
+import {Provider} from "mobx-react";
 
-ReactDOM.render(<App Provider={HatchStore} />, document.getElementById('root'));
+const Root = (
+    <Provider HatchStore={HatchStore}>
+        <App />
+    </Provider>
+);
+
+ReactDOM.render(Root, document.getElementById('root'));
 

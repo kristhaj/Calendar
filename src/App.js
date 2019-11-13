@@ -44,13 +44,13 @@ class App extends Component {
         return (
             <div className={classes.root} style={{ backGroundColor: theme.palette.secondary.main}}>
                 <CssBaseline/>
-                <Container className="contentContainer" maxWidth="lg" style={{ backGroundColor: theme.palette.secondary.main }} minHeight="100vh">
-                    <AppBar className={classes.appBar} position="static" minHeight="10vh" style={{backgroundColor: theme.palette.primary.main}}>
+                <Container className="contentContainer" maxWidth="lg" style={{ backGroundColor: theme.palette.secondary.main }} minheight="100vh">
+                    <AppBar className={classes.appBar} position="static" minheight="10vh" style={{backgroundColor: theme.palette.primary.main}}>
                         <Typography className={classes.title} variant="h3" align="center" >
                             Julekalender
                         </Typography>
                     </AppBar>
-                    <Paper className={classes.container} elevation={12} style={{ backGroundColor: theme.palette.secondary.main }} minHeight="50vh">
+                    <Paper className={classes.container} elevation={12} style={{ backGroundColor: theme.palette.secondary.main }} minheight="50vh">
                         <Hatch />
                     </Paper>
                 </Container>

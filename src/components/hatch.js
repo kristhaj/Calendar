@@ -36,10 +36,6 @@ const useStyles = makeStyles( theme => ({
 @observer
 class Hatch extends Component {
 
-    componentDidMount() {
-        this.forceUpdate();
-    }
-
     render() {
         const classes = useStyles;
         const {HatchStore} = this.props;
@@ -47,19 +43,19 @@ class Hatch extends Component {
             <Grid container spacing={3} style={{ padding: 30}}>
                 {HatchStore.hatches.map((hatch, index) => {
                     return (
-                        <Grid key={hatch.date} className={classes.hatch} item xs={3} alignContent="center">
+                        <Grid key={hatch.date} className={classes.hatch} item xs={3}>
                             <Paper
                                 elevation={3}
                                 style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}
                             >
                                 <Typography variant="h4" align="center">
-                                    {hatch.text}
+                                    {hatch.id}
                                 </Typography>
                             </Paper>
                         </Grid>
                     );
                 })}
-                <Grid className={classes.hatch} item xs={3} alignContent="center">
+                <Grid className={classes.hatch} item xs={3}>
                     <Paper elevation={3} style={{backgroundColor: theme.palette.primary.light, color: theme.palette.primary.contrastText}}>
                         <Typography variant="h4" align="center">
                             1
